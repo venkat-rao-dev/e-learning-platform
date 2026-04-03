@@ -22,6 +22,9 @@ An online learning platform that allows users to access courses, track their pro
 2. Navigate courses and dashboard
 3. Explore features
 
+## 🔗 Live Demo
+[E-Learning Platform](https://e-learning-bc873.web.app/)
+
 ## 👨‍💻 Author
 
 Venkata Rao Kancheti
