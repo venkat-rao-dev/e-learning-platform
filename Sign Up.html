@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>Sign Up</title>
+        <link rel="stylesheet" href="Sstyle.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://kit.fontawesome.com/a0028ef72c.js" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    </head>
+    <body>
+        <header>
+            <a href="#" class="logo"><i class="ri-home-office-fill"><span>Logo</span></i></a>
+
+                <ul class="navbar">
+                    <li><a  href="./index.html"></i>Home</a></li>
+                    <li><a href="./About Us.html"></i>About Us</a></li>
+                    <li><a href="./Courses.html"></i>Courses</a></li>
+                    <li><a href="./Contact Us.html">Contact Us</a></li>
+        
+                </ul>
+                <div class="main">
+                    <a href="./login.html" class="user"><i class="ri-user-fill"></i>Login</a>
+                    <a href="#" class="active">Sign up</a>
+                    <div class="bx bx-menu" id="menu-icon"></div>
+                </div>
+            </header>
+            <div class="registration-form">
+                <form action="#" method="post">
+                    <h1>Registration form</h1>
+                    <p>Full Name:</p>
+                    <input type="text" name="fullname" placeholder="Full Name" id="fname" onfocus="fn()" onblur="fnoblur()">
+                    <p id="fnp"></p>
+                    <p>User Name:</p>
+                    <input type="text" name="username" placeholder="User Name" id="uname" onfocus="fn1()" onblur="fnoblur1()">
+                    <p id="fnp1"></p>
+                    <p>Email:</p>
+                    <input type="email" name="email" placeholder="Email" id="email" onfocus="fn2()" onblur="fnoblur2()">
+                    <p id="fnp2"></p>
+                    <p>Password:</p>
+                    <input type="password" name="password" placeholder="Password" id="pass" onfocus="fn3()" onblur="fnoblur3()">
+                    <p id="fnp3"></p>
+                    <button type="submit">Sign Up</button>
+                </form>
+            </div>
+        </div>
+
+        <script  src="script.js"></script>
+    </body>
+</html>

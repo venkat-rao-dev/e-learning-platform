@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+   min-height: 100vh;
+   background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(background.jpg);
+   background-size: cover;
+   background-position: center;
+}
+header{
+    position: fixed;
+    width:100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background:transparent;
+    padding: 28px 12%;
+    transition: all .50s ease;
+}
+.logo{
+   display: flex;
+   align-items: center;
+}
+.logo i{
+   color: chartreuse;
+   font-size: 28px;
+   margin-right: 3px;
+}
+.logo span{
+   color: #fff;
+   font-size: 1.1rem;
+   font-weight: 600;
+} 
+.navbar{
+    display: flex;
+}
+.navbar a{
+    color:#009688;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 5px 0;
+    margin: 0px 30px;
+    transition: all .50s ease;
+}
+ .navbar a:hover{
+    text-decoration: none;
+    color:chartreuse;
+ }
+ .navbar a.active{
+   color: chartreuse;
+}
+.main{
+   display: flex;
+   align-items: center;
+}
+.main a{
+   margin-right: 25px;
+   margin-left: 10px;
+   color: #009688;
+   font-size: 1.1rem;
+   font-weight: 500;
+   transition: all .50s ease;
+}
+.user{
+   display: flex;
+   align-items: center;
+}
+.user i{
+   color:chartreuse;
+   font-size: 28px;
+   margin-right: 7px;
+}
+.main a:hover{
+    color: chartreuse;
+}
+#menu-icon{
+   font-size: 35px;
+   color:#009688;
+   cursor: pointer;
+   z-index: 10001;
+   display: none;
+}
+ .navbar a.active{
+    color: chartreuse;
+ }
+.container{
+   position: absolute;
+   width: 80%;
+   margin: 50px auto;
+   font-size: 14px;
+   margin-left: 9%;
+
+}
+.contact-box{
+  
+   background: #fff;
+   display: flex;
+}
+.contact-left{
+   flex-basis: 60%;
+   padding: 20px 60px;
+}
+.contact-right{
+   flex-basis: 40%;
+   padding: 40px;
+   background: #009688;
+   color: #fff;
+}
+h1{
+   margin-top: 10%;
+   margin-bottom: 10px;
+   color: #009688;
+}
+.input-row{
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 20px;
+}
+.input-row .input-group{
+   flex-basis: 45%;
+}
+input{
+   width: 100%;
+   border: none;
+   border-bottom: 1px solid #ccc;
+   outline: none;
+   padding-bottom: 5px;
+}
+textarea{
+   width: 100%;
+   border: 1px solid #ccc;
+   outline: none;
+   padding: 10px;
+   box-sizing: border-box;
+}
+label{
+   margin-bottom: 6px;
+   display: block;
+   color:#009688;
+}
+lable{
+   color:#009688;
+}
+.container .btn4{
+   background-color: #009688;
+   width: 80px;
+   border: none;
+   outline: none;
+   color: #fff;
+   height: 35px;
+   border-radius: 30px;
+   margin-top: 20px;
+   box-shadow: 0px 5px 15px 0px rgba(28,0,181,0.3);
+}
+.container .btn4:hover{
+   background-color:#21625b;
+   width: 80px;
+   border: none;
+   outline: none;
+   color: #fff;
+   height: 35px;
+   border-radius: 30px;
+   margin-top: 20px;
+   box-shadow: 0px 5px 15px 0px rgba(28,0,181,0.3);
+}
+.contact-left h3{
+   color: #009688;
+   font-weight: 600;
+   margin-bottom: 30px;
+}
+.contact-right h3{
+   color: #09f7db;
+   font-weight: 600;
+   margin-bottom: 30px;
+   font-size:20px ;
+}
+tr td:first-child{
+   padding-right: 20px;
+}
+tr td{
+   color: #ccc;
+   padding-top: 20px;
+   font-size: 15px;
+}
+@media (max-width: 1280px){
+   header{
+      padding: 14px 2%;
+      transition: .2s;
+   }
+   .navbar a{
+      padding: 5px 0;
+      margin: 0px 20px;
+   }
+}
+@media (max-width: 1090px){
+    #menu-icon{
+      display: block;
+    }
+    .navbar{
+      position: absolute;
+      top: 100%;
+      right: -100%;
+      width: 270px;
+      height: 29vh;
+      background:#009688;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      border-radius: 10px;
+      transition: all .50s ease;
+    }
+    .navbar a{
+      color: #fff;
+      display: block;
+      margin: 10px 0;
+      padding: 0px 25px;
+      transition: all .50s ease;
+    }
+    .navbar a:hover{
+      color:chartreuse;
+      transform: translateY(5px);
+    }
+    .navbar a.active{
+      color:chartreuse;
+    }
+    .navbar.open{
+      right: 2%;
+    }
+}

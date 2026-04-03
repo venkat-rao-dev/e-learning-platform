@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <title>login</title>
+        <link rel="stylesheet" href="Lstyle.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://kit.fontawesome.com/a0028ef72c.js" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    </head>
+    <body>
+        <header>
+            <a href="#" class="logo"><i class="ri-home-office-fill"><span>Logo</span></i></a>
+
+                <ul class="navbar">
+                    <li><a  href="./index.html"></i>Home</a></li>
+                    <li><a href="./About Us.html"></i>About Us</a></li>
+                    <li><a href="./Courses.html"></i>Courses</a></li>
+                    <li><a href="./Contact Us.html">Contact Us</a></li>
+        
+                </ul>
+                <div class="main">
+                    <a href="#" class="active" class="user"><i class="ri-user-fill"></i>Login</a>
+                    <a href="./Sign Up.html">Sign up</a>
+                    <div class="bx bx-menu" id="menu-icon"></div>
+                </div>
+            </header>
+                <div class="login-form">
+                    <h1>Login Form</h1>
+                    <form action="#" method="post">
+                        <p>User Name</p>
+                        <input type="text" name="user" placeholder="User Name" id="uname" onfocus="f()" onblur="noblur()">
+                        <p id="np1"></p>
+                        <p>Password</p>
+                        <input type="password" name="password" placeholder="Password" id="pass" onfocus="f1()" onblur="noblur1()">
+                        <p id="np2"></p>
+                        <button type="submit">Login</button>
+                    </form>
+                </div>
+
+                <script  src="script.js"></script>
+
+                <script>
+            function f(){
+                document.getElementById("np1").innerHTML="Enter Your user Name";
+                document.getElementById("np1").style.color="Red";
+            }
+            function noblur(){
+                   var fname=document.getElementById("uname").value;
+                   
+                   if(fname==""){
+                    document.getElementById("np1").innerText="** Must Enter Your user Name";
+                   }
+                   else{
+                    document.getElementById("np1").innerText="";
+                   }
+            }
+
+            function f1(){
+                document.getElementById("np2").innerHTML="Enter your password";
+                document.getElementById("np2").style.color="Red";
+            }
+            function noblur1(){
+                   var mobile=document.getElementById("pass").value;
+                   
+                   if(mobile==""){
+                    document.getElementById("np2").innerText="** Must Enter your Password ";
+                   }
+                   else{
+                    document.getElementById("np2").innerText="";
+                   }
+            }
+
+                </script>
+    </body>
+</html>
